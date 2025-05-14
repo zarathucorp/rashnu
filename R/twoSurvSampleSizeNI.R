@@ -35,6 +35,14 @@
 #'   power = 0.8,
 #'   margin = 1.3
 #' )
+#'
+#' @references
+#' Jung SH, Chow SC. (2012). On sample size calculation for comparing survival curves under general hypothesis testing.
+#' *Journal of Biopharmaceutical Statistics*, 22(3), 485–495.
+#'
+#' Web calculator (Non-Inferiority):
+#' https://nshi.jp/en/js/twosurvyrni/
+#'
 #' @importFrom stats pnorm qnorm
 #' @export
 twoSurvSampleSizeNI <- function(syear, yrsurv1, yrsurv2, alloc, accrualTime, followTime,  alpha, power, margin) {

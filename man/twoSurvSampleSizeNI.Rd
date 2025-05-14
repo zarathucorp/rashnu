@@ -62,4 +62,12 @@ twoSurvSampleSizeNI(
   power = 0.8,
   margin = 1.3
 )
+
+}
+\references{
+Jung SH, Chow SC. (2012). On sample size calculation for comparing survival curves under general hypothesis testing.
+\emph{Journal of Biopharmaceutical Statistics}, 22(3), 485–495.
+
+Web calculator (Non-Inferiority):
+https://nshi.jp/en/js/twosurvyrni/
 }

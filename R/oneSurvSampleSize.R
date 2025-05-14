@@ -32,6 +32,27 @@
 #'   method = "log-log"
 #' )
 #'
+#'
+#' @references
+#' Fleming TR, Harrington DP. (1991). *Counting Processes and Survival Analysis*.
+#' New York: Wiley, pp. 236–237, Example 6.3.1.
+#'
+#' Andersen PK, Borgan O, Gill RD, Keiding N. (1993). *Statistical Models Based on Counting Processes*.
+#' New York: Springer-Verlag, pp. 176–287, Section IV.1–3.
+#'
+#' Bie O, Borgan O, Liestol K. (1987). Confidence intervals and confidence bands for the cumulative hazard rate function and their small sample properties.
+#' *Scandinavian Journal of Statistics*, 14(3), 221–233.
+#'
+#' Borgan O, Liestol K. (1990). A note on confidence intervals and bands for the survival function based on transformations.
+#' *Scandinavian Journal of Statistics*, 17(1), 35–41.
+#'
+#' Nagashima K, Noma H, Sato Y, Gosho M. (2020). Sample size calculations for single-arm survival studies
+#' using transformations of the Kaplan–Meier estimator. *Pharmaceutical Statistics*. https://doi.org/10.1002/pst.2090
+#' Available at: https://arxiv.org/abs/2012.03355
+#'
+#' Web calculator (One-sample):
+#' https://nshi.jp/en/js/onesurvyr/
+#'
 #' @importFrom stats pnorm qnorm
 #' @export
 oneSurvSampleSize <- function(

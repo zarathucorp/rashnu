@@ -1,0 +1,4 @@
+Name: Interactive Sample Size Calculator
+Description: RStudio Addin for Calculating Sample Size
+Binding: rashnuBasic
+Interactive: true
