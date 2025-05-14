@@ -1,15 +1,18 @@
 Package: rashnu
 Title: Balanced Sample Size and Power Calculation Tools
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Sungho", "Choi", , "1213sam0@gmail.com", role = c("aut", "cre"))
-Description:  Implements sample size and power calculation methods with a focus on balance and fairness in study design, inspired by the Zoroastrian deity Rashnu, the judge who weighs truth. Supports survival analysis and various hypothesis testing frameworks.
-License: MIT
+Description: Implements sample size and power calculation methods with a focus on balance and fairness in study design, inspired by the Zoroastrian deity Rashnu, the judge who weighs truth. Supports survival analysis and various hypothesis testing frameworks.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 LazyData: true
 Imports:
   shiny,
-  DT
-  
+  DT,
+  stats
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

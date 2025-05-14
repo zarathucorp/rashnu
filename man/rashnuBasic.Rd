@@ -36,7 +36,7 @@ based on the selected design and displays results in a data table format.
 \item Lakatos E. Biometrics, 1988.
 \item Lakatos & Lan. Statistics in Medicine, 1992.
 \item Fleming & Harrington. Counting Processes and Survival Analysis, 1991.
-\item Borgan Ø, Andersen PK et al. Springer-Verlag, 1993.
+\item Borgan 0, Andersen PK et al. Springer-Verlag, 1993.
 \item Nagashima et al. Pharmaceutical Statistics, 2020.
 }
 }

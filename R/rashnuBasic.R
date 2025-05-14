@@ -26,7 +26,7 @@
 #'   \item Lakatos E. Biometrics, 1988.
 #'   \item Lakatos & Lan. Statistics in Medicine, 1992.
 #'   \item Fleming & Harrington. Counting Processes and Survival Analysis, 1991.
-#'   \item Borgan Ø, Andersen PK et al. Springer-Verlag, 1993.
+#'   \item Borgan 0, Andersen PK et al. Springer-Verlag, 1993.
 #'   \item Nagashima et al. Pharmaceutical Statistics, 2020.
 #' }
 #'
@@ -90,21 +90,21 @@ rashnuBasic <- function(){
 
          DTOutput("result_table"),
          tags$h3("Reference"),
-         tags$div("Jung SH, Chow SC. On sample size calculation for comparing survival curves under general hypothesis testing. Journal of Biopharmaceutical Statistics 2012; 22(3):485–495."),
+         tags$div("Jung SH, Chow SC. On sample size calculation for comparing survival curves under general hypothesis testing. Journal of Biopharmaceutical Statistics 2012; 22(3):485-495."),
 
-         tags$div(" Lakatos E. Sample sizes based on the log-rank statistic in complex clinical trials. Biometrics 1988; 44:229–241."),
+         tags$div("Lakatos E. Sample sizes based on the log-rank statistic in complex clinical trials. Biometrics 1988; 44:229-241."),
 
-         tags$div(" Lakatos E, Lan KK. A comparison of sample size methods for the logrank statistic. Statistics in Medicine 1992; 11(2):179–191."),
+         tags$div("Lakatos E, Lan KK. A comparison of sample size methods for the logrank statistic. Statistics in Medicine 1992; 11(2):179-191."),
 
-         tags$div(" Fleming TR, Harrington DP. Counting Processes and Survival Analysis. New York: Wiley, 1991, 236–237, Example 6.3.1."),
+         tags$div("Fleming TR, Harrington DP. Counting Processes and Survival Analysis. New York: Wiley, 1991, 236-237, Example 6.3.1."),
 
-         tags$div(" Andersen PK, Borgan Ø, Gill RD, Keiding N. Statistical Models Based on Counting Processes. New York: Springer-Verlag, 1993, 176–287, Section IV.1–3."),
+         tags$div("Andersen PK, Borgan \u00D8, Gill RD, Keiding N. Statistical Models Based on Counting Processes. New York: Springer-Verlag, 1993, 176-287, Section IV.1-3."),
 
-         tags$div(" Bie O, Borgan Ø, Liestøl K. Confidence intervals and confidence bands for the cumulative hazard rate function and their small sample properties. Scandinavian Journal of Statistics 1987; 14(3): 221–233."),
+         tags$div("Bie O, Borgan \u00D8, Liest\u00D8l K. Confidence intervals and confidence bands for the cumulative hazard rate function and their small sample properties. Scandinavian Journal of Statistics 1987; 14(3): 221-233."),
 
-         tags$div(" Borgan Ø, Liestøl K. A note on confidence intervals and bands for the survival function based on transformations. Scandinavian Journal of Statistics 1990; 17(1): 35–41."),
+         tags$div("Borgan \u00D8, Liest\u00D8l K. A note on confidence intervals and bands for the survival function based on transformations. Scandinavian Journal of Statistics 1990; 17(1): 35-41."),
 
-         tags$div(" Nagashima K, Noma H, Sato Y, Gosho M. Sample size calculations for single-arm survival studies using transformations of the Kaplan–Meier estimator. Pharmaceutical Statistics 2020. DOI: 10.1002/pst.2090. [arXiv:2012.03355].")
+         tags$div("Nagashima K, Noma H, Sato Y, Gosho M. Sample size calculations for single-arm survival studies using transformations of the Kaplan-Meier estimator. Pharmaceutical Statistics 2020. DOI: 10.1002/pst.2090. [arXiv:2012.03355].")
 
       )
     )

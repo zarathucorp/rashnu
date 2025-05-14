@@ -32,6 +32,7 @@
 #'   method = "log-log"
 #' )
 #'
+#' @importFrom stats pnorm qnorm
 #' @export
 oneSurvSampleSize <- function(
     survTime, p1, p2,accrualTime, followTime,

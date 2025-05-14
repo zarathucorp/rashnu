@@ -62,5 +62,4 @@ twoSurvSampleSizeNI(
   power = 0.8,
   margin = 1.3
 )
-
 }

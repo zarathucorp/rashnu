@@ -35,7 +35,7 @@
 #'   power = 0.8,
 #'   margin = 1.3
 #' )
-#'
+#' @importFrom stats pnorm qnorm
 #' @export
 twoSurvSampleSizeNI <- function(syear, yrsurv1, yrsurv2, alloc, accrualTime, followTime,  alpha, power, margin) {
 

@@ -41,8 +41,7 @@
 #'   side = "two.sided"
 #' )
 #'
-#' @import shiny
-#' @import DT
+#' @importFrom stats pnorm qnorm
 #' @export
 lakatosSampleSize <- function(syear, yrsurv1, yrsurv2, alloc,
                               accrualTime, followTime,

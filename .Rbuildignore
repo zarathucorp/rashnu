@@ -1,2 +1,12 @@
 ^rashnu\.Rproj$
 ^\.Rproj\.user$
+^README\.Rmd$
+^README\.md$
+^\.gitignore$
+^\.github$
+^\.DS_Store$
+^\.vscode$
+^tests/testthat/testdata/
+^pkgdown/
+^cran-comments\.md$
+^LICENSE\.md$
