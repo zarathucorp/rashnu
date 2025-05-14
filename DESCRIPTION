@@ -18,4 +18,4 @@ Imports:
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-URL: https://zarathucorp.github.io/rashnu, https://github.com/zarathucorp/rashnu
+URL: https://zarathucorp.github.io/rashnu/, https://github.com/zarathucorp/rashnu, 
