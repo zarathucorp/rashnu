@@ -1,0 +1,56 @@
+---
+output: github_document
+---
+
+# Rashnu
+
+**Rashnu** is the Zoroastrian deity of truth and justice—the one who weighs souls on a golden scale.  
+This R package, developed by **Zarathu**, draws inspiration from Rashnu’s role as the divine judge to offer precision and fairness in sample size determination.
+
+> *"Where truth is weighed, science begins."*
+
+---
+
+In clinical trials and research design, every decision matters.  
+**Rashnu** helps researchers define the *right* number of participants for:
+- Non-inferiority studies
+- Superiority comparisons (Lakatos method)
+- One-arm survival designs with transformation-based inference
+
+This package brings clarity, rigor, and justice to your design process.
+
+
+
+## Installation
+
+You can install the development version of rashnu from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("zarathucorp/rashnu")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(rashnu)
+## basic example code
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
