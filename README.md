@@ -39,29 +39,101 @@ Addin
 rashnuBasic()
 ```
 
-![](inst/www/figures/addin.gif)
+![](man/figures/addin.gif)
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+### Two sample survival non-inferiority
 
 ``` r
-summary(cars)
+twoSurvSampleSizeNI(
+   syear = 12,
+   yrsurv1 = 0.5,
+   yrsurv2 = 0.5,
+   alloc = 1,
+   accrualTime = 24,
+   followTime = 24,
+   alpha = 0.025,
+   power = 0.8,
+   margin = 1.3
+)
 ```
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+``` r
+$Sample_size_of_standard_group
+[1] 264
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
+$Sample_size_of_test_group
+[1] 264
 
-You can also embed plots, for example:
+$Total_sample_size
+[1] 528
 
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
+$Expected_event_numbers_of_standard_group
+[1] 227.9
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+$Expected_event_numbers_of_test_group
+[1] 227.9
+
+$Total_expected_event_numbers
+[1] 455.9
+```
+
+### Two sample survival superiority
+
+``` r
+lakatosSampleSize(
+   syear = 12,
+   yrsurv1 = 0.3,
+   yrsurv2 = 0.5,
+   alloc = 1,
+   accrualTime = 24,
+   followTime = 24,
+   alpha = 0.05,
+   power = 0.8,
+   method = "logrank",
+   side = "two.sided"
+)
+```
+
+``` r
+$Sample_size_of_standard_group
+[1] 58
+
+$Sample_size_of_test_group
+[1] 58
+
+$Total_sample_size
+[1] 116
+
+$Expected_event_numbers_of_standard_group
+[1] 55.6
+
+$Expected_event_numbers_of_test_group
+[1] 49.7
+
+$Total_expected_event_numbers
+[1] 105.3
+
+$Actual_power
+[1] 0.803
+```
+
+### One sample non-parametric survival
+
+``` r
+oneSurvSampleSize(
+   survTime = 12,
+   p1 = 0.3,
+   p2 = 0.4,
+   accrualTime = 24,
+   followTime = 24,
+   alpha = 0.05,
+   power = 0.8,
+   side = "two.sided",
+   method = "log-log"
+)
+```
+
+``` r
+SampleSize      Power 
+   189.000      0.802 
+```
