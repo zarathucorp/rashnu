@@ -6,7 +6,6 @@
 version](https://www.r-pkg.org/badges/version/rashnu)](https://CRAN.R-project.org/package=rashnu)
 [![Monthly
 downloads](https://cranlogs.r-pkg.org/badges/monthly/rashnu)](https://cranlogs.r-pkg.org/badges/monthly/rashnu)
-[![Codecov](https://codecov.io/gh/zarathucorp/rashnu/branch/main/graph/badge.svg)](https://app.codecov.io/gh/zarathucorp/rashnu)
 [![License: Apache
 2.0](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](LICENSE)
 [![GitHub
