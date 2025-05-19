@@ -1,4 +1,20 @@
 
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/zarathucorp/rashnu/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/zarathucorp/rashnu/actions/workflows/R-CMD-check.yaml)
+[![CRAN
+version](https://www.r-pkg.org/badges/version/rashnu)](https://CRAN.R-project.org/package=rashnu)
+[![Monthly
+downloads](https://cranlogs.r-pkg.org/badges/monthly/rashnu)](https://cranlogs.r-pkg.org/badges/monthly/rashnu)
+[![Codecov](https://codecov.io/gh/zarathucorp/rashnu/branch/main/graph/badge.svg)](https://app.codecov.io/gh/zarathucorp/rashnu)
+[![License: Apache
+2.0](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](LICENSE)
+[![GitHub
+issues](https://img.shields.io/github/issues/zarathucorp/rashnu)](https://github.com/zarathucorp/rashnu/issues)
+[![GitHub
+stars](https://img.shields.io/github/stars/zarathucorp/rashnu?style=social)](https://github.com/zarathucorp/rashnu/stargazers)
+<!-- badges: end -->
+
 # Rashnu
 
 **Rashnu** is the Zoroastrian deity of truth and justice—the one who
