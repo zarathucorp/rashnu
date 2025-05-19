@@ -61,8 +61,11 @@ This R package, developed by <strong>Zarathu</strong>, draws inspiration from Ra
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of rashnu from <a href="https://github.com/zarathucorp/rashnu" class="external-link">GitHub</a> with:</p>
+<p>You can install the stable version of rashnu from CRAN with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"rashnu"</span><span class="op">)</span></span></code></pre></div>
+<p>To access the latest development version, install it from GitHub with:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"zarathucorp/rashnu"</span><span class="op">)</span></span></code></pre></div>
 </div>
@@ -73,14 +76,14 @@ This R package, developed by <strong>Zarathu</strong>, draws inspiration from Ra
 <h3 id="rstudio-addins">Rstudio Addins<a class="anchor" aria-label="anchor" href="#rstudio-addins"></a>
 </h3>
 <p>Use <code><a href="reference/rashnuBasic.html">rashnuBasic()</a></code> or Click <strong>Interactive Sample Size Calculator</strong> Addin</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/rashnuBasic.html">rashnuBasic</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/addin.gif"></p>
 </div>
 <div class="section level3">
 <h3 id="two-sample-survival-non-inferiority">Two sample survival non-inferiority<a class="anchor" aria-label="anchor" href="#two-sample-survival-non-inferiority"></a>
 </h3>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/twoSurvSampleSizeNI.html">twoSurvSampleSizeNI</a></span><span class="op">(</span></span>
 <span>   syear <span class="op">=</span> <span class="fl">12</span>,</span>
 <span>   yrsurv1 <span class="op">=</span> <span class="fl">0.5</span>,</span>
@@ -92,28 +95,28 @@ This R package, developed by <strong>Zarathu</strong>, draws inspiration from Ra
 <span>   power <span class="op">=</span> <span class="fl">0.8</span>,</span>
 <span>   margin <span class="op">=</span> <span class="fl">1.3</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="sc">$</span>Sample_size_of_standard_group</span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">264</span></span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="sc">$</span>Sample_size_of_test_group</span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">264</span></span>
-<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="sc">$</span>Total_sample_size</span>
-<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">528</span></span>
-<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="sc">$</span>Expected_event_numbers_of_standard_group</span>
-<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">227.9</span></span>
-<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="sc">$</span>Expected_event_numbers_of_test_group</span>
-<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">227.9</span></span>
-<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a></span>
-<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a><span class="sc">$</span>Total_expected_event_numbers</span>
-<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">455.9</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="sc">$</span>Sample_size_of_standard_group</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">264</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="sc">$</span>Sample_size_of_test_group</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">264</span></span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="sc">$</span>Total_sample_size</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">528</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="sc">$</span>Expected_event_numbers_of_standard_group</span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">227.9</span></span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a><span class="sc">$</span>Expected_event_numbers_of_test_group</span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">227.9</span></span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a><span class="sc">$</span>Total_expected_event_numbers</span>
+<span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">455.9</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="two-sample-survival-superiority">Two sample survival superiority<a class="anchor" aria-label="anchor" href="#two-sample-survival-superiority"></a>
 </h3>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/lakatosSampleSize.html">lakatosSampleSize</a></span><span class="op">(</span></span>
 <span>   syear <span class="op">=</span> <span class="fl">12</span>,</span>
 <span>   yrsurv1 <span class="op">=</span> <span class="fl">0.3</span>,</span>
@@ -126,31 +129,31 @@ This R package, developed by <strong>Zarathu</strong>, draws inspiration from Ra
 <span>   method <span class="op">=</span> <span class="st">"logrank"</span>,</span>
 <span>   side <span class="op">=</span> <span class="st">"two.sided"</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="sc">$</span>Sample_size_of_standard_group</span>
-<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">58</span></span>
-<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="sc">$</span>Sample_size_of_test_group</span>
-<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">58</span></span>
-<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="sc">$</span>Total_sample_size</span>
-<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">116</span></span>
-<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="sc">$</span>Expected_event_numbers_of_standard_group</span>
-<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">55.6</span></span>
-<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="sc">$</span>Expected_event_numbers_of_test_group</span>
-<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">49.7</span></span>
-<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a></span>
-<span id="cb6-16"><a href="#cb6-16" tabindex="-1"></a><span class="sc">$</span>Total_expected_event_numbers</span>
-<span id="cb6-17"><a href="#cb6-17" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">105.3</span></span>
-<span id="cb6-18"><a href="#cb6-18" tabindex="-1"></a></span>
-<span id="cb6-19"><a href="#cb6-19" tabindex="-1"></a><span class="sc">$</span>Actual_power</span>
-<span id="cb6-20"><a href="#cb6-20" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">0.803</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="sc">$</span>Sample_size_of_standard_group</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">58</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="sc">$</span>Sample_size_of_test_group</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">58</span></span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="sc">$</span>Total_sample_size</span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">116</span></span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a><span class="sc">$</span>Expected_event_numbers_of_standard_group</span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">55.6</span></span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a><span class="sc">$</span>Expected_event_numbers_of_test_group</span>
+<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">49.7</span></span>
+<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a><span class="sc">$</span>Total_expected_event_numbers</span>
+<span id="cb7-17"><a href="#cb7-17" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">105.3</span></span>
+<span id="cb7-18"><a href="#cb7-18" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" tabindex="-1"></a><span class="sc">$</span>Actual_power</span>
+<span id="cb7-20"><a href="#cb7-20" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">0.803</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="one-sample-non-parametric-survival">One sample non-parametric survival<a class="anchor" aria-label="anchor" href="#one-sample-non-parametric-survival"></a>
 </h3>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/oneSurvSampleSize.html">oneSurvSampleSize</a></span><span class="op">(</span></span>
 <span>   survTime <span class="op">=</span> <span class="fl">12</span>,</span>
 <span>   p1 <span class="op">=</span> <span class="fl">0.3</span>,</span>
@@ -162,8 +165,8 @@ This R package, developed by <strong>Zarathu</strong>, draws inspiration from Ra
 <span>   side <span class="op">=</span> <span class="st">"two.sided"</span>,</span>
 <span>   method <span class="op">=</span> <span class="st">"log-log"</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>SampleSize      Power </span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>   <span class="fl">189.000</span>      <span class="fl">0.802</span> </span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>SampleSize      Power </span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>   <span class="fl">189.000</span>      <span class="fl">0.802</span> </span></code></pre></div>
 </div>
 </div>
 </div>
