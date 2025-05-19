@@ -13,6 +13,8 @@ downloads](https://cranlogs.r-pkg.org/badges/monthly/rashnu)](https://cranlogs.r
 issues](https://img.shields.io/github/issues/zarathucorp/rashnu)](https://github.com/zarathucorp/rashnu/issues)
 [![GitHub
 stars](https://img.shields.io/github/stars/zarathucorp/rashnu?style=social)](https://github.com/zarathucorp/rashnu/stargazers)
+[![Codecov test
+coverage](https://codecov.io/gh/zarathucorp/rashnu/graph/badge.svg)](https://app.codecov.io/gh/zarathucorp/rashnu)
 <!-- badges: end -->
 
 # Rashnu

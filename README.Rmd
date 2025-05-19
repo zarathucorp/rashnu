@@ -11,6 +11,7 @@ output: github_document
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/zarathucorp/rashnu)](https://github.com/zarathucorp/rashnu/issues)
 [![GitHub stars](https://img.shields.io/github/stars/zarathucorp/rashnu?style=social)](https://github.com/zarathucorp/rashnu/stargazers)
+[![Codecov test coverage](https://codecov.io/gh/zarathucorp/rashnu/graph/badge.svg)](https://app.codecov.io/gh/zarathucorp/rashnu)
 <!-- badges: end -->
 
 
