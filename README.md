@@ -37,8 +37,13 @@ This package brings clarity, rigor, and justice to your design process.
 
 ## Installation
 
-You can install the development version of rashnu from
-[GitHub](https://github.com/zarathucorp/rashnu) with:
+You can install the stable version of rashnu from CRAN with:
+
+``` r
+install.packages("rashnu")
+```
+
+To access the latest development version, install it from GitHub with:
 
 ``` r
 # install.packages("pak")
