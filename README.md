@@ -1,8 +1,6 @@
 
 <!-- badges: start -->
 
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/zarathucorp/rashnu?branch=master&svg=true)](https://ci.appveyor.com/project/zarathucorp/rashnu)
 [![R-CMD-check](https://github.com/zarathucorp/rashnu/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/zarathucorp/rashnu/actions/workflows/R-CMD-check.yaml)
 [![CRAN
 version](https://www.r-pkg.org/badges/version/rashnu)](https://CRAN.R-project.org/package=rashnu)
