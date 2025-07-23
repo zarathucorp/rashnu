@@ -24,13 +24,15 @@ ui <- page_sidebar(
     uiOutput("param_ui")
   ),
   uiOutput("main_ui"),
-  style = "
-    @media (max-width: 768px) {
-      .sidebar-layout {
-        flex-direction: column !important;
+  tags$head(
+    tags$style(HTML("
+      @media (max-width: 768px) {
+        .sidebar-layout {
+          flex-direction: column !important;
+        }
       }
-    }
-  "
+    "))
+  )
 )
 
 server <- function(input, output, session) {
