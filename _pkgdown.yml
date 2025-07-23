@@ -19,9 +19,9 @@ navbar:
     - home
     - reference
     - news
-    - shinylive
+    - calculator
   components:
-    shinylive:
+    calculator:
       text: Calculator
-      href: site/index.html
+      href: articles/shiny-app.html
 

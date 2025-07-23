@@ -1,8 +1,9 @@
 pandoc: '3.3'
 pkgdown: 2.1.0
 pkgdown_sha: ~
-articles: {}
-last_built: 2025-07-23T04:44Z
+articles:
+  shiny-app: shiny-app.html
+last_built: 2025-07-23T04:52Z
 urls:
   reference: https://zarathucorp.github.io/rashnu/reference
   article: https://zarathucorp.github.io/rashnu/articles
