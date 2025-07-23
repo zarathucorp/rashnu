@@ -13,10 +13,6 @@ param_ui_or_size <- function() {
       numericInput("delta", "delta", NULL)
     ),
     numericInput("kappa", "Kappa", 1),
-    conditionalPanel(
-      "input.test_type != '1-side'",
-      numericInput("sd", "sd", NULL)
-    ),
     numericInput("alpha", "alpha", 0.05),
     conditionalPanel(
       "input.mode == 'size'",

@@ -7,8 +7,10 @@ param_ui_k_mean_size <- function() {
     radioButtons("mode", "Calculate", choices = c("Sample Size" = "size", "Power" = "power")),
     numericInput("muA", "muA", NULL),
     numericInput("muB", "muB", NULL),
-    numericInput("kappa", "kappa", 1),
-    numericInput("tau", "tau", NULL),
+    conditionalPanel(
+      "input.test_type == '1-side'",
+      numericInput("kappa", "kappa", 1)
+    ),
     conditionalPanel(
       "input.test_type == '2-side'",
       numericInput("sd", "sd", NULL)
@@ -18,6 +20,7 @@ param_ui_k_mean_size <- function() {
       numericInput("sdA", "sdA", NULL),
       numericInput("sdB", "sdB", NULL)
     ),
+    numericInput("tau", "tau", NULL),
     numericInput("alpha", "alpha", 0.05),
     conditionalPanel(
       "input.mode == 'size'",

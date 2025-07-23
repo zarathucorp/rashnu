@@ -7,7 +7,14 @@ param_ui_coxph_size <- function() {
     )),
     radioButtons("mode", "Calculate", choices = c("Sample Size" = "size", "Power" = "power")),
     numericInput("hr", "hr", NULL),
-    numericInput("hr0", "hr0", NULL),
+    conditionalPanel(
+      "input.test_type == '2-side' || input.test_type == 'non-inferiority'",
+      numericInput("hr0", "hr0", NULL)
+    ),
+    conditionalPanel(
+      "input.test_type == 'equivalence'",
+      numericInput("delta", "delta", NULL)
+    ),
     numericInput("pE", "pE", NULL),
     numericInput("pA", "pA", NULL),
     numericInput("alpha", "alpha", 0.05),
