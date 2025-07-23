@@ -24,3 +24,4 @@ Suggests:
 Config/testthat/edition: 3
 URL: https://zarathucorp.github.io/rashnu/, https://github.com/zarathucorp/rashnu
 BugReports: https://github.com/zarathucorp/rashnu/issues
+VignetteBuilder: knitr
