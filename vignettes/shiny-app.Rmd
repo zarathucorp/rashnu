@@ -1,6 +1,0 @@
----
-title: "shiny-app"
-output: rmarkdown::html_document
----
-
-<iframe src="../site/index.html" width="100%" height="800px" style="border:none;"></iframe>
