@@ -23,4 +23,4 @@ navbar:
   components:
     calculator:
       text: Calculator
-      href: articles/shiny-app.html
+      href: site/index.html
