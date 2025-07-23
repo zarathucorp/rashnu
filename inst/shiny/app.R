@@ -24,14 +24,8 @@ ui <- page_sidebar(
     uiOutput("param_ui")
   ),
   uiOutput("main_ui"),
-  tags$head(
-    tags$style(HTML("
-      @media (max-width: 768px) {
-        .sidebar-layout {
-          flex-direction: column !important;
-        }
-      }
-    "))
+  sidebar_open = list(
+    mobile = "always-above"
   )
 )
 
