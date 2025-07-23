@@ -23,4 +23,4 @@ navbar:
   components:
     calculator:
       text: Calculator
-      href: site/index.html
+      href: calc.html

@@ -5,8 +5,11 @@ library(bslib)
 lapply(list.files("source", full.names = TRUE), source)
 
 ui <- page_sidebar(
-  layout = "sidebar-top",
   sidebar = sidebar(
+    open = list(
+      desktop = "open",
+      mobile = "always-above"
+    ),
     selectInput("tool", "Choose a function:", choices = c(
       "Test 1 Mean" = "one_mean_size",
       "Compare 2 Means" = "two_mean_size",
@@ -23,10 +26,7 @@ ui <- page_sidebar(
     )),
     uiOutput("param_ui")
   ),
-  uiOutput("main_ui"),
-  sidebar_open = list(
-    mobile = "always-above"
-  )
+  uiOutput("main_ui")
 )
 
 server <- function(input, output, session) {
