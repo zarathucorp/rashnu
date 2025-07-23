@@ -5,7 +5,6 @@ library(bslib)
 lapply(list.files("source", full.names = TRUE), source)
 
 ui <- page_sidebar(
-  title = "Power and Sample Size",
   sidebar = sidebar(
     selectInput("tool", "Choose a function:", choices = c(
       "Test 1 Mean" = "one_mean_size",
