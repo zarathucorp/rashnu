@@ -3,4 +3,24 @@ title: "Calculator"
 output: rmarkdown::html_document
 ---
 
-<iframe src="../site/index.html" width="100%" style="border:none; height: 100vh;"></iframe>
+<style>
+/* 기본 레이아웃 깨부수기 */
+body > div.container,
+body > div.container > div.row,
+article.main {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* iframe 꽉 채우기 */
+.fullscreen-frame {
+  width: 100vw;
+  height: calc(100vh - 60px); /* navbar 높이 감안 */
+  border: none;
+  display: block;
+}
+</style>
+
+<iframe src="../site/index.html" class="fullscreen-frame"></iframe>
