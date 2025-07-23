@@ -14,3 +14,14 @@ template:
   bootstrap: 5
   bootswatch: flatly
 
+navbar:
+  structure:
+    left:
+      - home
+      - reference
+      - news
+      - shinylive
+  components:
+    shinylive:
+      text: "Calculator"
+      href: "site/index.html"

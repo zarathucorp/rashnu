@@ -77,13 +77,13 @@ server <- function(input, output, session) {
                   "sccs_size" = result_sccs_size(input),
                   "one_norm_size" = result_one_norm_size(input),
                   "one_bino_size" = result_one_bino_size(input)
-                  )
+    )
     if (input$mode == "size") {
       paste("Sample size: ", res)
     } else if (input$mode == "power") {
       paste("Power: ", res)
     }
-    })
+  })
 }
 
 shinyApp(ui, server)
