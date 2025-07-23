@@ -3,7 +3,7 @@ pkgdown: 2.1.0
 pkgdown_sha: ~
 articles:
   shiny-app: shiny-app.html
-last_built: 2025-07-23T05:24Z
+last_built: 2025-07-23T05:34Z
 urls:
   reference: https://zarathucorp.github.io/rashnu/reference
   article: https://zarathucorp.github.io/rashnu/articles
