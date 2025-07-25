@@ -2,7 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.1.3
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-07-23T09:18Z
+last_built: 2025-07-25T01:56Z
 urls:
   reference: https://zarathucorp.github.io/rashnu/reference
   article: https://zarathucorp.github.io/rashnu/articles
