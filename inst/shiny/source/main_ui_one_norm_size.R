@@ -1,7 +1,6 @@
 main_ui_one_norm_size <- function() {
   withMathJax(
     tagList(
-      h4("Result"),
       tags$div(
         style = "font-size: 24px; font-weight: bold;",
         textOutput("result")

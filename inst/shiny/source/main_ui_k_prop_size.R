@@ -1,7 +1,6 @@
 main_ui_k_prop_size <- function() {
   withMathJax(
     tagList(
-      h4("Result"),
       tags$div(
         style = "font-size: 24px; font-weight: bold;",
         textOutput("result")

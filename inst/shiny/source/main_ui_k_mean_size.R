@@ -1,7 +1,6 @@
 main_ui_k_mean_size <- function(test_type) {
   withMathJax(
     tagList(
-      h4("Result"),
       tags$div(
         style = "font-size: 24px; font-weight: bold;",
         textOutput("result")

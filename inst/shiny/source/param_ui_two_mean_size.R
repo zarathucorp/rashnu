@@ -29,18 +29,9 @@ param_ui_two_mean_size <- function() {
     ),
     fluidRow(
       column(6, numericInput("alpha", "alpha", 0.05)),
-      conditionalPanel(
-        "input.mode == 'size'",
-        column(6, numericInput("beta", "beta", 0.2))
-      ),
-      conditionalPanel(
-        "input.mode == 'power' && input.test_type == '2-side'",
-        column(6, numericInput("nB", "nB", NULL))
-      ),
-      conditionalPanel(
-        "input.mode == 'power' && input.test_type == '1-side'",
-        column(6, numericInput("nA", "nA", NULL))
-      )
+      column(6, conditionalPanel("input.mode == 'size'", numericInput("beta", "beta", 0.2)),
+             conditionalPanel("input.mode == 'power' && input.test_type == '2-side'", numericInput("nB", "nB", NULL)),
+             conditionalPanel("input.mode == 'power' && input.test_type == '1-side'", numericInput("nA", "nA", NULL)))
     )
   )
 }
