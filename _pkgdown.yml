@@ -23,7 +23,7 @@ navbar:
     - calculator
   components:
     surv:
-      text: Surv
+      text: Survival Calculator
       href: surv.html
     calculator:
       text: Calculator
