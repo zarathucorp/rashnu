@@ -6,22 +6,22 @@ param_ui_one_mean_size <- function() {
       "Non-inferiority" = "non-inferiority",
       "Equivalence" = "equivalence"
     )),
-    radioButtons("mode", "Calculate", choices = c("Sample Size" = "size", "Power" = "power")),
-    numericInput("mu", "mu", NULL),
-    numericInput("mu0", "mu0", NULL),
+    radioButtons("mode", "Calculate", choices = c("Sample Size" = "size", "Power" = "power"), inline = TRUE),
+    fluidRow(
+      column(6, numericInput("mu", "mu", NULL)),
+      column(6, numericInput("mu0", "mu0", NULL))
+    ),
     conditionalPanel(
       "input.test_type == 'non-inferiority' || input.test_type == 'equivalence'",
       numericInput("delta", "delta", NULL)
     ),
     numericInput("sd", "sd", NULL),
-    numericInput("alpha", "alpha", 0.05),
-    conditionalPanel(
-      "input.mode == 'size'",
-      numericInput("beta", "beta", 0.2)
-    ),
-    conditionalPanel(
-      "input.mode == 'power'",
-      numericInput("n", "n", NULL)
+    fluidRow(
+      column(6, numericInput("alpha", "alpha", 0.05)),
+      column(6,
+             conditionalPanel("input.mode == 'size'", numericInput("beta", "beta", 0.2)),
+             conditionalPanel("input.mode == 'power'", numericInput("n", "n", NULL))
+      )
     )
   )
 }

@@ -19,8 +19,12 @@ navbar:
     - home
     - reference
     - news
+    - surv
     - calculator
   components:
+    surv:
+      text: Surv
+      href: surv.html
     calculator:
       text: Calculator
       href: calc.html

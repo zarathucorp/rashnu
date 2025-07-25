@@ -6,9 +6,11 @@ param_ui_two_mean_size <- function() {
       "Non-inferiority" = "non-inferiority",
       "Equivalence" = "equivalence"
     )),
-    radioButtons("mode", "Calculate", choices = c("Sample Size" = "size", "Power" = "power")),
-    numericInput("muA", "muA", NULL),
-    numericInput("muB", "muB", NULL),
+    radioButtons("mode", "Calculate", choices = c("Sample Size" = "size", "Power" = "power"), inline = TRUE),
+    fluidRow(
+      column(6, numericInput("muA", "muA", NULL)),
+      column(6, numericInput("muB", "muB", NULL))
+    ),
     conditionalPanel(
       "input.test_type == 'non-inferiority' || input.test_type == 'equivalence'",
       numericInput("delta", "delta", NULL)
@@ -20,21 +22,25 @@ param_ui_two_mean_size <- function() {
     ),
     conditionalPanel(
       "input.test_type == '1-side'",
-      numericInput("sdA", "sdA", NULL),
-      numericInput("sdB", "sdB", NULL)
+      fluidRow(
+        column(6, numericInput("sdA", "sdA", NULL)),
+        column(6, numericInput("sdB", "sdB", NULL))
+      )
     ),
-    numericInput("alpha", "alpha", 0.05),
-    conditionalPanel(
-      "input.mode == 'size'",
-      numericInput("beta", "beta", 0.2)
-    ),
-    conditionalPanel(
-      "input.mode == 'power' && input.test_type == '1-side'",
-      numericInput("nA", "nA", NULL)
-    ),
-    conditionalPanel(
-      "input.mode == 'power' && input.test_type != '1-side'",
-      numericInput("nB", "nB", NULL)
+    fluidRow(
+      column(6, numericInput("alpha", "alpha", 0.05)),
+      conditionalPanel(
+        "input.mode == 'size'",
+        column(6, numericInput("beta", "beta", 0.2))
+      ),
+      conditionalPanel(
+        "input.mode == 'power' && input.test_type == '2-side'",
+        column(6, numericInput("nB", "nB", NULL))
+      ),
+      conditionalPanel(
+        "input.mode == 'power' && input.test_type == '1-side'",
+        column(6, numericInput("nA", "nA", NULL))
+      )
     )
   )
 }

@@ -6,6 +6,7 @@ lapply(list.files("source", full.names = TRUE), source)
 
 ui <- page_sidebar(
   sidebar = sidebar(
+    width = "400px",
     open = list(
       desktop = "open",
       mobile = "always-above"

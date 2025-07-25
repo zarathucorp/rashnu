@@ -6,21 +6,21 @@ param_ui_one_prop_size <- function() {
       "Non-inferiority" = "non-inferiority",
       "Equivalence" = "equivalence"
     )),
-    radioButtons("mode", "Calculate", choices = c("Sample Size" = "size", "Power" = "power")),
-    numericInput("p", "p", NULL),
-    numericInput("p0", "p0", NULL),
+    radioButtons("mode", "Calculate", choices = c("Sample Size" = "size", "Power" = "power"), inline = TRUE),
+    fluidRow(
+      column(6, numericInput("p", "p", NULL)),
+      column(6, numericInput("p0", "p0", NULL))
+    ),
     conditionalPanel(
       "input.test_type == 'non-inferiority' || input.test_type == 'equivalence'",
       numericInput("delta", "delta", NULL)
     ),
-    numericInput("alpha", "alpha", 0.05),
-    conditionalPanel(
-      "input.mode == 'size'",
-      numericInput("beta", "beta", 0.2)
-    ),
-    conditionalPanel(
-      "input.mode == 'power'",
-      numericInput("n", "n", NULL)
+    fluidRow(
+      column(6, numericInput("alpha", "alpha", 0.05)),
+      column(6,
+             conditionalPanel("input.mode == 'size'", numericInput("beta", "beta", 0.2)),
+             conditionalPanel("input.mode == 'power'", numericInput("n", "n", NULL))
+      )
     )
   )
 }
