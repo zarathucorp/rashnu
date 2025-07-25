@@ -349,7 +349,7 @@ or_size(pA = 0.25, pB = 0.25, delta = 0.5, kappa = 1, alpha = 0.05, nB = 366, te
 [1] 0.8008593
 ```
 
-### Test relative incidence in self controlled case series studies
+### Test relative incidence in self controlled case series studies (SCCS)
 ``` r
 # SCCS, Alt-2
 sccs_size(p = 3, r = 42/365, alpha = 0.05, beta = 0.2)
